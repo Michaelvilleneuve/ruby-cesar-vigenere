@@ -1,0 +1,9 @@
+require_relative 'Cesar'
+require_relative 'Vigenere'  
+
+# Decrypt JP's phrase
+vigenere = Vigenere.new
+result = vigenere.encrypt "bonjoujemappellemichaeljesuistresgentil", with_key = "dzapjpjd"
+vigenere.decrypt result, with_key = "dzapjpjd"
+#vigenere.decrypt result
+vigenere.yield
